@@ -1,7 +1,7 @@
 # Detección de Botellas de Plástico con YOLOv3
 
 ## Video del Desarrollo del Proyecto
-[![Video del Desarrollo](https://img.youtube.com/vi/TU_ID_DE_YOUTUBE/0.jpg)](https://www.youtube.com/watch?v=TU_ID_DE_YOUTUBE)
+[![Video del Desarrollo](https://img.youtube.com/vi/ojxQuIABw4I/0.jpg)](https://www.youtube.com/watch?v=ojxQuIABw4I)
 
 ## Descripción del Proyecto
 Este proyecto utiliza YOLOv3 para la detección de botellas de plástico en centros de acopio, cumpliendo con la resolución 1407 de 2018 sobre la responsabilidad extendida del productor en envases y empaques. El informe abarca desde la obtención de datos hasta la validación del modelo.
@@ -17,6 +17,7 @@ Este proyecto utiliza YOLOv3 para la detección de botellas de plástico en cent
 ## Implementación en Colab
 - Habilitación de GPU.
 - Montaje de Google Drive para almacenamiento y acceso a archivos.
+- Archivos Custom_data: [Modelo inicial](https://drive.google.com/drive/u/2/folders/1B2CaKL25vJv6RKt6KSMK0jgbG3bAYrLl),                           [Modelo modificado](https://drive.google.com/drive/folders/1phvuS45YYsYIx9PNWd6_HDa43mwUn-Pb)
 
 ## Proceso de Entrenamiento
 1. Creación de directorio de imágenes.
@@ -38,16 +39,7 @@ Este proyecto utiliza YOLOv3 para la detección de botellas de plástico en cent
 - **Modelo Modificado:**
   - Canal único (escala de grises).
   - Cambio en el tamaño de las cajas delimitadoras.
-
-## Validación del Desempeño
-### Modelo Inicial
-- mAP: 21.77%
-- TP: 358, FP: 290, FN: 947
-
-### Modelo Modificado
-- mAP: 9.73%
-- TP: 0, FP: 0, FN: 1305
-
+  - 
 ## Detección en Tiempo Real
 Se implementó la detección en tiempo real con OpenCV y YOLOv3.
 
